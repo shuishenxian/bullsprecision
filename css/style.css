@@ -323,10 +323,7 @@ ul { list-style: none; }
 }
 
 .gradient-text {
-    background: var(--gradient-hero-text);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--white);
 }
 
 .hero-desc {
