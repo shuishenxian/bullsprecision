@@ -308,7 +308,7 @@
 
 .application-card:hover {
     background: rgba(255,255,255,0.08);
-    border-color: rgba(0,194,255,0.3);
+    border-color: rgba(211, 32, 39, 0.35);
     transform: translateY(-4px);
 }
 
