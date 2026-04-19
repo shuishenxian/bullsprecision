@@ -451,3 +451,38 @@
         width: 140px;
     }
 }
+
+/* --- Product Downloads --- */
+.product-downloads {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+    padding-top: 20px;
+    border-top: 1px dashed #E2E8F0;
+}
+
+.product-download-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background .2s, border-color .2s, color .2s;
+}
+
+.product-download-link:hover {
+    background: var(--gray-100);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.product-download-link i {
+    color: #DC2626;
+    font-size: 1.1rem;
+}
