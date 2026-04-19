@@ -486,3 +486,22 @@
     color: #DC2626;
     font-size: 1.1rem;
 }
+
+/* --- Compatible Fixtures chart --- */
+.product-fixtures { background: var(--gray-100); }
+
+.fixtures-chart {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 24px;
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.fixtures-chart img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
