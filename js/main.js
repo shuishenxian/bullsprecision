@@ -5,10 +5,13 @@
     // --- Navbar scroll effect ---
     const navbar = document.getElementById('navbar');
     const backToTop = document.getElementById('backToTop');
+    // Product detail pages have a light hero; keep nav in solid/scrolled state
+    // so link text stays readable regardless of scroll position.
+    const alwaysSolid = !!document.querySelector('.product-hero');
 
     function onScroll() {
         const scrollY = window.scrollY;
-        navbar.classList.toggle('scrolled', scrollY > 50);
+        navbar.classList.toggle('scrolled', alwaysSolid || scrollY > 50);
         backToTop.classList.toggle('visible', scrollY > 500);
 
         // Update active nav link

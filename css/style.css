@@ -607,9 +607,9 @@ ul { list-style: none; }
 }
 
 .product-card.featured {
-    grid-column: 1 / -1;
+    grid-column: span 2;
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1.2fr;
     border: 2px solid var(--primary);
 }
 
@@ -733,9 +733,10 @@ ul { list-style: none; }
 
 .tech-card {
     padding: 36px 28px;
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(0,194,255,0.18);
     border-radius: var(--radius-lg);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
     transition: var(--transition);
     opacity: 0;
     transform: translateY(30px);
@@ -1263,10 +1264,14 @@ ul { list-style: none; }
     .hero-desc br { display: none; }
     .hero-actions { flex-direction: column; }
     .hero-stats-row {
-        flex-wrap: wrap;
-        gap: 24px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        width: 100%;
     }
     .hero-stat-divider { display: none; }
+    .hero-stat-num { font-size: 1.6rem; }
+    .hero-stat-label { font-size: 0.72rem; line-height: 1.3; }
 
     .products-grid { grid-template-columns: 1fr; }
     .tech-grid { grid-template-columns: 1fr; }
